@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Simulador</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+
+        <div id="direccionalIzquierda" class="container">
+            <button id="btndireccionalIzquierda" class="btnDireccional">Encender/Apagar direccional</button>
+        </div>
+
+        <div id="tableroCentral" class="container">
+
+            <button id="btnEncender">Encender/Apagar</button>
+            <button id="btnParadas">Paradas</button>
+            <button id="btnArrancar">Arrancar</button>
+
+            <h4>Marchas</h4>
+
+            <select id="marcha">
+            <option value="neutro">Neutro</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="r">R</option>
+            </select>
+
+            <h4>Freno de mano</h4>
+            <select id="frenoDeMano">
+            <option value="on">On</option>
+            <option value="off">Off</option>
+        </select>
+
+            <h4>clutch</h4>
+            <select id="clutch">
+            <option value="on">On</option>
+            <option value="off">Off</option>
+        </select>
+
+            <h4>Freno</h4>
+            <select id="freno">
+            <option value="on">On</option>
+            <option value="off">Off</option>
+        </select>
+
+            <h4>Distancia</h4>
+            <input type="text" id="kilometros" placeholder="Ingrese la distancia">
+
+        </div>
+
+        <div id="direccionalDerecha" class="container">
+            <button id="btndireccionalDerecha" class="btnDireccional">Encender/Apagar direccional</button>
+        </div>
+
+        <div id="mensajes" class="container">
+            <p id="mensaje"></p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../model/carro.js"></script>
+    <script type="text/javascript" src="../control/control.js"></script>
+</body>
+
+</html>
